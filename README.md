@@ -3,11 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+img {display: block; margin-left: auto; margin-right: auto;}
+body {background-color: powderblue;}
+
 </style>
 </head>
   <body>
