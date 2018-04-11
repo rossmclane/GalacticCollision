@@ -22,7 +22,7 @@
     </ul>
     <h3> Assumptions & Approximations </h3>
     <ul>
-      <li> </li>
+      <li> Uniform Galactic Density </li>
       <li> </li>
       <li> </li>
     </ul>
