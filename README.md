@@ -8,7 +8,7 @@
     <br>
     <h3> Barnes-Hut Algorithm </h3>
     <p> The Barnes-Hut Algorithm is a clever scheme to group bodies that are close together and treat them as a single center of mass in order to make force calculations less intensive. It recursively divides the bodies in your system into groups by sorting them into a quad tree (like a binary tree, but with four child nodes instead of two). Each node in the Quad Tree represents a region in 2-Dimensional space. Below is a depiction of these Quadrants with bodies in them. "External Quadrants" are those that only have a single body in them. "Internal Quadrants" are those quadrants that refer to other quadrants, which may or may not have bodies in them.</p>
-    <img src="BH_Quadrants.png" alt="Barnes-Hut Quadrant Example" alight="middle">
+    <img src="BH_Quadrants.png" alt="Barnes-Hut Quadrant Example" align="middle">
     <p> The image above can be nicely represented as a quad tree, seen below. </p>
     <img src="BH_QuadTree.png" alt="Barnes-Hut Tree Example">
     <br>
