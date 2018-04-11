@@ -8,8 +8,8 @@
     <ul>
       <li> Objects File - This file defines the Body and Cell Classes. A Body object is a mass in the N-body system. A Cell object represents a quadrant in 2 dimensional space. It has the ability to self divide into child quadrants and populate itself with Body objects. </li>
       <li> Tree File - This file defines the Tree object, which has an "advance" method that populates all of the cells with bodies, calculates the net forces on each body according to the Barnes-Hut Algorithm and steps each body through time.</li>
-      <li> Initialize File - This file sets the initial conditions for the bodies in the system. Currently </li>
-      <li> </li>
+      <li> Initialize File - This file sets the initial conditions for the bodies in the system. Currently, this simply initializes two black holes within the universe and uniformly distributes masses in a disk around them. There is no distribution of masses throughout the galaxy, each mass is simply a solar mass and the black holes are 4 million times a solar mass. The is initial rotational velocity of masses around the Black Holes, but no initial velocity of the galaxy itself. </li>
+      <li> Driver File - This file runs the simulation for some duration and will eventually write the position output to a CSV file and animate the process</li> 
     </ul>
   </body>
 </html>
