@@ -12,6 +12,7 @@
     <p> The image above can be nicely represented as a quad tree, seen below. </p>
     <img src="BH_QuadTree.png" alt="Barnes-Hut Tree Example" width = "700" height="400">
     <br>
+    <p> To calculate the net force on a particular body, traverse the nodes of the tree, starting from the root. If the center-of-mass of an internal node is sufficiently far from the body, approximate the bodies contained in that part of the tree as a single body, whose position is the group’s center of mass and whose mass is the group’s total mass. The algorithm is fast because we don’t need to individually examine any of the bodies in the group. </p>
     <h3> Contents </h3>
     <ul>
       <li> Objects File - This file defines the Body and Cell Classes. A Body object is a mass in the N-body system. A Cell object represents a quadrant in 2 dimensional space. It has the ability to self divide into child quadrants and populate itself with Body objects. </li>
