@@ -23,10 +23,18 @@
     <h3> Assumptions & Approximations </h3>
     <ul>
       <li> Uniform Galactic Density </li>
-      <li> </li>
-      <li> </li>
+      <li> No translational initial velocity for galaxy </li>
+      <li> Barnes-Hut itself is an approximation</li>
+      <li> Two-dimensionality of the simulation </li>
     </ul>
     <h3> Future Improvements </h3>
+     <ul>
+      <li> Fix the time and length scales so they are accurate </li>
+      <li> Add animation with color to show a mass scale </li>
+      <li> Add a more accurate 2D mass and position density for Galaxies </li>
+      <li> Only allow Black Hole - Black Hole and Black Hole - Start interactions to speed up the simulation </li>
+       <li> Add an updating Barnes-Hut Mesh to visualize the groupings of the starts </li>
+    </ul>
   </body>
 </html>
   
