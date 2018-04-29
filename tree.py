@@ -5,8 +5,6 @@ import initialize
 """ The tree class is used to drive the updating of the cells and the
 recalculation of the forces across each time step """
 
-#need to add in only interaction between BH and BH && BH and star
-
 class Tree:
     def __init__(self, bodies, box_size, dt, theta):
         self.bodies = bodies #these are all the bodies to be added to the tree
@@ -15,12 +13,10 @@ class Tree:
         self.theta = theta
 
     def advance(self):
-
         #--------------This will repopulate the tree upon every step---------------#
         root = Cell(-self.box_size, self.box_size, -self.box_size, self.box_size)
-
         for body in self.bodies:
-            root.add(body)
+            root.add(body) #this is failing somehow to add bodies
         self.bodies = root.get_bodies()
 
 
@@ -28,10 +24,10 @@ class Tree:
         for body in self.bodies:
             body.resetForces() #reset the net force on the body
             cells = [root]
-            while (cells): #while there are still cells in the list
+            while cells: #while there are still cells in the list
                 cell = cells.pop()
                 if cell.far_enough(body, self.theta):
-                    if (cell.n > 0):
+                    if cell.n > 0:
                         body.addForce(cell)
                 else:
                     cells.extend(cell.children)

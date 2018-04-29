@@ -3,6 +3,7 @@ import random
 from objects import Body
 #from tree import tree
 import numpy.random as random
+from math import floor
 
 box_size = 50 #Mly
 solar_mass = 2e30 #kg
@@ -31,7 +32,7 @@ def make_galaxies(N):
     for j in range(2):
         # for each galaxy, generate a random list of radii from 0
         # to the radius of that galaxy
-        randList = random.uniform(0,radii[j],(1, N/2)).tolist()[0]
+        randList = random.uniform(0.,radii[j],(1, int(floor(N/2)))).tolist()[0]
 
         # for each radius, randomly generate an angle for that start
         # and generate inital velocity conditions

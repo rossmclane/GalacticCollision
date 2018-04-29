@@ -3,14 +3,14 @@ import tree
 import objects
 
 duration = 3e10 #years
-dt = 3e5 #years? is this small enough
-time_steps = int(duration / dt)
-
+dt = 100
+#time_steps = int(duration / dt)
+time_steps = 10
 
 #typical radius is 5e6 ly
 box_size = 50 #Mega light years
 theta = .5 #threshold for Barnes-Hut
-N = 10 #number of bodies, not including Black Holes
+N = 0 #number of bodies, not including Black Holes
 
 
 
@@ -22,10 +22,6 @@ sys = tree.Tree(bodies,box_size,dt,theta)
 
 
 
-#for i in xrange(time_steps):
-sys.advance()
-bodies = sys.bodies
-x = [b.rx for b in bodies]
-y = [b.ry for b in bodies]
-
-print(x)
+for i in xrange(time_steps):
+    print(sys.bodies)
+    sys.advance()
