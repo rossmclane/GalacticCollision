@@ -20,6 +20,21 @@
       <li> Initialize File - This file sets the initial conditions for the bodies in the system. Currently, this simply initializes two black holes within the universe and uniformly distributes masses in a disk around them. There is no distribution of masses throughout the galaxy, each mass is simply a solar mass and the black holes are 4 million times a solar mass. The is initial rotational velocity of masses around the Black Holes, but no initial velocity of the galaxy itself. </li>
       <li> Driver File - This file runs the simulation for some duration and will eventually write the position output to a CSV file and animate the process</li> 
     </ul>
+    <h3> Assumptions & Approximations </h3>
+    <ul>
+      <li> Uniform Galactic Density </li>
+      <li> No translational initial velocity for galaxy </li>
+      <li> Barnes-Hut itself is an approximation</li>
+      <li> Two-dimensionality of the simulation </li>
+    </ul>
+    <h3> Future Improvements </h3>
+     <ul>
+      <li> Fix the time and length scales so they are accurate </li>
+      <li> Add animation with color to show a mass scale </li>
+      <li> Add a more accurate 2D mass and position density for Galaxies </li>
+      <li> Only allow Black Hole - Black Hole and Black Hole - Start interactions to speed up the simulation </li>
+       <li> Add an updating Barnes-Hut Mesh to visualize the groupings of the starts </li>
+    </ul>
   </body>
 </html>
   
